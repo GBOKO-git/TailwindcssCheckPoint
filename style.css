@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+}
+img:hover {
+  transition: transform 0.1 ease;
+  transform: scale(1.1);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+  color: rgb(34, 28, 3);
+}

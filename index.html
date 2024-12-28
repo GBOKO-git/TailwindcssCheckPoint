@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>TailwindCss checkpoint!</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/aa3d26eed5.js" crossorigin="anonymous"></script>
   <script>
@@ -48,18 +49,19 @@
   <!--Section d'en-tête:
 Dessinez un en-tête avec votre nom et un menu de navigation (au moins trois éléments : Accueil, Projets, Contact).
 Utilisez les classes Tailwind pour la stylisation et la réactivité.
- -->
-  <header class="flex justify-around bg-gradient-to-r from-sky-500 to-indigo-500 p-2 fixed w-full ">
-    <h1 class="font-bold ">
-      AMARA GBOKO ANZOUMANAN
+   relative-->
+  <header class="flex justify-around bg-gradient-to-r p-3 from-sky-500 to-indigo-500 fixed w-full mt-0">
+    <i class="fa fa-laptop text-orange-500"></i> 
+    <h1 class="font-fraunces text-white">
+    AMARA GBOKO ANZOUMANAN 
     </h1>
     
     <button class="flex items-center lg:hidden" id="menu-toggle">
-      <i class=" fa fa-align-justify pr-5"></i>
+      <i class=" fa fa-align-justify pr-5 text-green-500"></i>
      </button>
     
       <div id="menu" class="lg:flex  lg:gap-5 hidden">
-      <ul class="flex gap-10">
+      <ul class="flex gap-10 lg:font-bold">
         <li><i class="fa fa-home pr-2 text-white"></i><a href="#home">Home</a></li>
          <li><i class="fa fa-laptop pr-2 text-white"></i><a href="#project">Projects</a></li>
          <li><i class="fa fa-book pr-2 text-white"></i><a href="#competence">Skills</a></li>
@@ -67,56 +69,65 @@ Utilisez les classes Tailwind pour la stylisation et la réactivité.
         <li><i class="fa regular fa-user pr-2 text-white"></i><a href="#footer">About</a></li>
       </ul>     
       </div>
+      
   </header>
-  <main>
+  <main >
     
     <!--Créer une section héros avec une image de fond et un titre vous présentant.
 Appliquer les classes Tailwind pour l'alignement et la taille du texte, ainsi que les marges et l'espacement.
 -->
-    <section id="home" class=" bg-gradient-to-r from-gray-500 to-blue-500 min-h-screen">
- <div class="bg-cover  bg-float bg-no-repeat w-full min-h-screen px-5" style="background-image: url('./images/photo.png');">
+    <section id="home" class="bg-gradient-to-r from-gray-500 to-blue-500 min-h-screen">
+ <div class="bg-cover  bg-float bg-no-repeat w-full min-h-screen pt-[20px] px-5" style="background-image: url('./images/photo.png');">
   
-      <div class="container text-white flex justify-center items-center gap-10">
-        <div class=" block pt-[100px] mt-10">
-        <h2 class="font-bold pt-[100px]">
-          Developpeur :
-        </h2>
-        <p>application web</p>
-        <p>application mobile</p>
-        <p>application de jeux video</p>
-        </div>
+      
+
+      <div class="text-white font-bold block justify-center pt-[500px] lg:px-[500px]">
+      <h1 class="text-Yellow">
+        Developpeur full stack :
+      </h1>
+      <p><i>programmeur de site web, application mobile </i></p>
+      <h1 class="text-Yellow">
+        gammeur :
+      </h1>
+      <p> <i>jeux video</i> </p>
+
       </div>
-      </div>
+      
     </section>
 <!--Section compétences:
 Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.Appliquer les classes Tailwind pour le stylisme et l'espacement.
 -->
-     <section id="competence" class="bg-gradient-to-r from-blue-600 to-yellow-600 min-h-screen">
+     <section id="competence" class=" bg-gradient-to-r from-blue-600 to-yellow-600 min-h-screen">
         <div class="max-w-7xl mx-auto px-6">
-       <h1 class="text-center pt-5 font-bold text-orange-700">Domaies de competences</h1>
-       <h2 class="text-center">Developoement front-end</h2>
+       <h1 class="text-center pt-5 font-fraunces text-orange-700">Domaies de competences</h1>
+       <h2 class="text-center">Developoement front-end </h2>
        
  <div class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-5 lg:flex justify-center">
    <!--competences en html-->
    <div class="html py-6 px-9 bg-yellow-100  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
      <h3 class="text-center font-semibold">HTML</h3>
      <img class="w-full h-auto object-cover rounded-t-lg" src="./images/html.jpg" alt="image">
-      
-      <p>details sur connaissances en matiere</p>
+     <h3 class="text-center pt-2">Connaissance en HTML</h3>
+      <p>maîtrise la structure des pages web, <br>maîtrise  la sémantique des balises HTML, <br>l'intégration de contenu multimédia, <br>
+         les bonnes pratiques d'accessibilité, référencement...</p>
    </div>
     <!--competences en css-->
    
-       <div class="css  px-9 py-6 bg-gray-400 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+       <div class="css  px-9 py-6 bg--400 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
          <h3 class="text-center font-semibold">CSS</h3>
          <img class="w-full h-auto object-cover rounded-t-lg" src="./images/css3.png" alt="image">
-         <p>details sur connaissances en matiere</p>
+         <h3 class="text-center pt-2">Connaissance en CSS</h3>
+         <p>maîtrise la mise en page avec Flexbox et Grid, <br> la gestion des styles responsives, <br>les animations de base, 
+         la personnalisation des éléments <br> avec des sélecteurs et des propriétés CSS.</p>
         </div>
            <!--competences en javascript-->
    
           <div class="javascript  py-6 px-9 bg-blue-100 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">JAVASCRIPT</h3>
            <img class="w-full h-auto object-cover rounded-t-lg" src="./images/javascript.jpg" alt="image">
-            <p>detail de connaissance en javascript</p>
+            <h3 class="text-center pt-2">Connaissance en javascript</h3>
+            <p> maîtrise la manipulation du DOM, les fonctions, <br> les événements, la gestion des tableaux et objets, <br> 
+              ainsi que les concepts de base de l'asynchrone </p>
          </div>
        </div>
           <!--competences en html-->
@@ -127,20 +138,28 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
          <div class="python  py-6 px-9 bg-yellow-200 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">Python</h3>
            <img class="w-full h-auto object-cover rounded-t-lg" src="./images/python.jpg" alt="image">
-            <p>detail de connaissance en python</p>
+           <h3 class="text-center pt-2">Connaissance en Python</h3>
+           <p> Maîtrise la syntaxe de base, <br>
+            les structures de données (listes, dictionnaires),<br> la gestion des erreurs, les fonctions, 
+            <br>les concepts fondamentaux de la programmation orientée objet.</p>
          </div>
              
           <!--competences en PHP-->
            <div class="php  py-6 px-9 bg-gray-500 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">php</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en php</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/PHP.jpg" alt="image">
+          <h3 class="text-center pt-2">Connaissance en php</h3>
+            <p>Maîtrise la gestion des formulaires,<br>L'interaction avec les bases de données (MySQL),<br>La manipulation des sessions 
+              et cookies,<br>Les bases de la programmation orientée objet.</p>
          </div>
             <!--competences en Node.js-->
-          <div class="node  py-6 px-9 bg-blue-200 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
+          <div class="node  py-6 px-9 bg-green-400 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">Node.js</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en Node.js</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/NODEJS.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en Node.js</h3>
+           <p>Maîtrise la création d'applications serveur,<br>La gestion des modules npm, les requêtes HTTP,<br>
+            L'usage de la base de données avec MongoDB ou MySQL,<br>Les concepts de programmation <br> asynchrone avec les callbacks
+             et les promesses.</p>
          </div>
            </div>
        <!--competences en base de donnees-->
@@ -152,15 +171,19 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
            <!--competences en mysql-->
           <div class="mysql  py-6 px-9 bg-yellow-300 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">MySql</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en mysql</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/mysql.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en Mysql</h3>
+           <p>Maîtrise la création et gestion de bases de données,<br> L'écriture de requêtes SQL (SELECT, INSERT, UPDATE, DELETE),<br>
+            L'optimisation des requêtes simples <br> La gestion des relations entre tables avec <br> des clés primaires et étrangères.</p>
           </div>
             
        <!--competences en MangoDB-->
            <div class="mangodb  py-6 px-9 bg-blue-300 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">MangoDB</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en MangoDB</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/MangoDB.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en MangoDB</h3>
+           <p>maîtrise la création et gestion de bases de données NoSQL,<br>L'utilisation de collections et documents,<br>
+          L'écriture de requêtes de base (find, insert, update, delete) <br> La gestion des indices pour optimiser les performances.</p>
          </div>
          </div>
        
@@ -169,32 +192,41 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
           <div class="grid p-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-5 lg:flex justify-center">
            
            <!--competences en Bootstrap-->
-           <div class="bootstrap  py-6 px-9 bg-yellow-400 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
+           <div class="bootstrap  py-6 px-9 bg-purple-400 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">BOOTSTRAP</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en BOOTSTRAP</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/bootstrap.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en BOOTSTRAP</h3>
+           <p>Maîtrise la création de mises en page responsives,<br>L'utilisation des composants prêts à l'emploi <br>(boutons, formulaires, modales) 
+            <br>L'adaptation du design avec les classes utilitaires du framework.</p>
          </div>
          
             
             <!--competences en tailwindcss-->
            <div class="tailwindcss  py-6 px-9 bg-gray-200 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">Tailwindcss</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en Tailwindcss</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/tailwindcss.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en TailwindCss</h3>
+           <p>Maîtrise la création de designs responsives en utilisant <br> Les classes utilitaires,<br> La personnalisation des styles à des
+            configurations <br> La gestion de la mise en page avec Flexbox et Grid.</p>
          </div>
               <!--competences en react-->
           <div class="react  py-6 px-9 bg-gray-200 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">REACT</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en REACT</p>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/REACT.jpg" alt="image">
+           <h3 class="text-center pt-4">Connaissance en React</h3>
+           <P class="pt-2">Maîtrise la création de composants fonctionnels,<br> La gestion de l'état avec useState et useEffect,<br> L'intégration des événements 
+          <br>La gestion du routage avec React Router.</P>
          </div>
           
       <!--competences en git-->
      <div class="git  py-6 px-9 bg-blue-400 rounded-lg shadow-lg hover:shadow-xl tansition-shadow duration-300">
            <h3 class="text-center font-semibold">GIT</h3>
-           <img class="w-full h-48 object-cover rounded-t-lg" src="https://via.placeholder.com/250" alt="image">
-            <p>detail de connaissance en GIT</p>
-         </div>
+           <img class="w-full h-auto object-cover rounded-t-lg" src="./images/git.jpg" alt="image">
+           <h3 class="text-center pt-2">Connaissance en GIT</h3> 
+           <p>Maîtrise les commandes de base (commit, push, pull, branch),<br> La gestion des versions, la résolution de conflits <br>
+            L'utilisation des branches pour le travail collaboratif.
+           </p>
+          </div>
          </div>
         </div>
      </section>
@@ -203,7 +235,7 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
     -->
     
     
-    <section id="project" class="bg-gradient-to-r from-red-300 to-green-300 min-h-screen">
+    <section id="project" class="bg-gradient-to-r from-blue-600 to-yellow-600 min-h-screen">
       <div class="max-w-7xl mx-auto px-6">
       <h1 class="text-xl font-semibold text-center py-5  text-orange-700">Mes projets en cours et à venir</h1>
       <div class=" text-center py-5">
@@ -211,34 +243,74 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
       </div>
       <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <!--html project-->
-       <div class="bg-green-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <img src="https://via.placeholder.com/300" alt="Projet 1" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mt-4">html chevkpoint</h3>
-        <p class="text-gray-600 mt-2">Une brève description du projet 1. Utilisation de technologies comme HTML, CSS, JavaScript, etc.</p>
-        <a href="#" class="text-blue-500 mt-4 inline-block">Voir plus</a>
-      </div>
+       <div class="bg-green-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ">
+        <img src="./images/checkhtml.png" alt="Projet 1" class="w-full h-auto object-cover rounded-t-lg">
+        <div class="hover:bg-slate-500  hover:text-white  rounded">
+        <h3 class="text-xl text-center  hover:font-bold font-semibold text-gray-800 mt-4"> HTML checkPoint</h3>
+        <span class="hover:text-red-500 flex justify-center pt-3"><h4><i class="fa fa-pen pr-5"></i>Technologies</h4></span>
+ 
+          <ul class=" hover:text-white font-Fraunces text-black mt-2 p-1">
+          <li>balises sémantiques</li>
+          <li>ajout de vidéo/audio à la page web.</li>
+          <li>Ajout des liens locaux, des listes ou des tableaux.</li>
+          <li>Utilisation des formulaires HTML.</li>
+        </ul>
+
+        <a href="https://github.com/GBOKO-git/learn_html.git" class="pl-[75px] text-blue-500 mt-4 inline-block">Voir le Git</a>
+      </div></div>
         <!--Css project-->
         <div class="bg-green-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <img src="https://via.placeholder.com/300" alt="Projet 2" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mt-4">CSS Checkpoint</h3>
-        <p class="text-gray-600 mt-2">Description courte du projet 2, avec l'utilisation de frameworks comme React, Node.js, etc.</p>
-        <a href="#" class="text-blue-500 mt-4 inline-block">Voir plus</a>
+        <img src="./images/Checkcss.png" alt="Projet 2" class="w-full h-auto object-cover rounded-t-lg">
+        <div class="hover:bg-slate-500  hover:text-white  rounded">
+          <h3 class="text-xl text-center font-semibold text-gray-800 mt-4"> CSS checkPoint</h3>
+          <span class="hover:text-red-500 flex justify-center pt-3">
+            <h4><i class="fa fa-pen pr-5"></i>Technologies</h4></span>
+ 
+            <ol class="font-Fraunces text-black mt-2 p-1 hover:text-white">
+            <li>Créer un fichier `styles.css`.</li>
+            <li>Liez le fichier css à notre projet HTML.</li>
+            <li>Changer la police de caractères.</li>
+            <li>Ajouter des attributs de classes aux documents HTML.</li>
+          </ol>
+  
+          <a href="https://github.com/GBOKO-git/html-css-chekpoint.git" class="pl-[75px] pt-5 text-blue-500 mt-4  inline-block">Voir le Git</a>
+        </div>
         </div>
         
         <!--bootstraop project-->
         <div class="bg-red-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <img src="https://via.placeholder.com/300" alt="Projet 3" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mt-4">bootstrap checkpint</h3>
-        <p class="text-gray-600 mt-2">Description courte du projet 3, peut inclure des technologies back-end comme Node.js, Express, etc.</p>
-        <a href="#" class="text-blue-500 mt-4 inline-block">Voir plus</a>
+        <img src="./images/Checkbootstrap.png" alt="Projet 3" class="w-full h-auto object-cover rounded-t-lg">
+        <div class="hover:bg-slate-500  hover:text-white  rounded">
+          <h3 class="text-xl text-center font-semibold text-gray-800 mt-4"> CSS BOOTSTRAP</h3>
+          <span class="hover:text-red-500 flex justify-center pt-3"><h4><i class="fa fa-pen pr-5"></i>Technologies</h4></span>
+ 
+            <ol class="font-Fraunces text-black mt-2 p-1 hover:text-white">
+            <li>Liez un lien cdn bootstrap</li>
+            <li>Utilisez le système de grille de Bootstrap.</li>
+            <li>Gerer la responsivité des ecran</li>
+            <li>Utiliser les classes appropriées pour la réactivité</li>
+          </ol>
+  
+          <a href="https://github.com/GBOKO-git/boutique_e-commerce.git" class="pl-[75px] pt-5 text-blue-500 mt-4  inline-block">Voir le Git</a>
+        </div>
       </div>
         
         <!--tailwindCss project-->
        <div class="bg-red-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <img src="https://via.placeholder.com/300" alt="Projet 4" class="w-full h-48 object-cover rounded-t-lg">
-        <h3 class="text-xl font-semibold text-gray-800 mt-4">TailwindCss</h3>
-        <p class="text-gray-600 mt-2">Description courte du projet 4, peut inclure l'intégration avec des API ou des bases de données.</p>
-        <a href="#" class="text-blue-500 mt-4 inline-block">Voir plus</a>
+        <img src="./images/tailwindcss.png" alt="Projet 4" class="w-full h-auto object-cover rounded-t-lg">
+        <div class="hover:bg-slate-500  hover:text-white  rounded ">
+          <h3 class="text-xl text-center font-semibold text-gray-800 mt-4"> CSS TailwindCss</h3>
+          <span class="hover:text-red-500 flex justify-center pt-3"><h4><i class="fa fa-pen pr-5"></i>Technologies</h4></span>
+ 
+            <ol class="font-Fraunces text-black mt-2 p-1 hover:text-white">
+            <li>Les classes Tailwind pour la stylisation et la réactivité</li>
+            <li> les classes Tailwind pour le style du formulaire</li>
+            <li> les classes Tailwind pour les badges ou les balises.</li>
+            <li class="font-bold"> <i>Ce site est un exemple concret de Tailwindcss !</i></li>
+          </ol>
+  
+          <a href="https://github.com/GBOKO-git/pratice-tailwindcss.git" class="pl-[75px] pt-5 text-blue-500 mt-4  inline-block">Voir le Git</a>
+        </div>
       </div>
         
       </div>
@@ -253,42 +325,32 @@ Mettre en valeur vos compétences à l'aide d'une mise en page flexbox ou grid.A
 Inclure un formulaire de contact simple avec des champs pour le nom, l'adresse électronique et un message.
 Appliquer les classes Tailwind pour le style du formulaire, l'espacement et la réactivité.
 -->
-    <section id="contact" class="py-10 px-5 md:px-[100px] lg:px-[300px] bg-gradient-to-r from-white to-green-500 min-h-screen">
-<h1 class="text-center py-5 font-bold text-orange-700">
+    <section id="contact" class="py-10 px-5 md:px-[100px] lg:px-[300px] bg-gradient-to-r from-blue-600 to-yellow-600 ">
+<h2 class="text-center py-5 font-bold text-orange-700">
   N'hesitez à nous contacter si vous avez besoin de nous services
-</h1>
-      <div class=" bg-gray-200 py-7  rounded">
+</h2>
+      <div class=" bg-gray-200 py-7  rounded lg:w-full">
         <form class="flex flex-col justify-center items-center">
           
-     <div class=" py-3 ">
-     <label class="font-bold" for="name" class="block"> Name</label> 
-     
-     <div class="btn">
-       <i class="fa fa-user"></i>
-       <input class="rounded" type="name" placeholder="amara gboko" required="name">
-     </div>
+     <div class=" lg:w-[30%] py-3 lg:flex lg:justify-center">
+     <label class="font-bold lg:pr-5" for="name">Name</label> 
+       <i class="fa fa-user pt-1 pr-1"></i>
+       <input class="rounded lg:w-full" type="name" placeholder="amara gboko" required="name">
       </div>  
           
-     <div class=" py-3">
-       
-     <label class="font-bold" for="email">E-mail</label> 
-     
-     <div class="btn">
-       <i class="fa fa-envelope"></i>
+     <div class="lg:w-[50%] py-3  lg:flex lg:justify-center"> 
+     <label class="font-bold lg:pr-5" for="email">  E-mail</label> 
+      <i class="fa fa-envelope pt-1 pr-1"></i>
        <input class="rounded" type="email" placeholder="amaragboko@gmail.com" required="email">
-     </div>
-      </div>            
-       <label>
-     <div class=" py-3 ">
-     <label class="font-bold" for="message">Message</label> 
-      <i class="fa fa-message"></i>
-     <div class="btn">
-      
+      </div> 
+
+     <div class="lg:w-[50%] py-3  lg:flex lg:justify-center">
+     <label class="font-bold lg:pt-6 lg:pr-5" for="message">Message</label> 
+      <i class="fa fa-message pt-5 pr-1"></i>
        <textarea class="rounded" placeholder="Laissez un message" required="message"></textarea>
-     </div>
       </div> 
          <!--boutton d'envoie et d'annulation-->
-         <div class="flex justify-around items-center lg:gap-10">
+         <div class="flex justify-around items-center gap-2 lg:gap-5 lg:w-[30%] pt-9">
            <div class="btn bg-blue-500 rounded h-auto w-[100px] px-2 gap-2 flex">
            <i class="fa fa-phone text-white"></i>
             <button class="btn" type="submit">Envoyer</button>
